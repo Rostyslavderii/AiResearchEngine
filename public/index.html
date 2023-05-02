@@ -88,6 +88,7 @@
         border-radius: 4px;
       }
     </style>
+
     <script>
       const form = document.getElementById("form");
 
@@ -128,6 +129,7 @@
               images.forEach(({ image }) => {
                 const answer = document.createElement("div");
                 const imageEl = document.createElement("img");
+
                 imageEl.src = image;
                 imageEl.alt = "image";
                 imageEl.style.width = "100%";
@@ -139,6 +141,7 @@
           }
         });
       };
+
       form.addEventListener("submit", onSubmit);
     </script>
   </body>
